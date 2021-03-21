@@ -1,0 +1,37 @@
+<h1> Cliente </h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @client.name %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @client.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @client.email %>
+</p>
+
+<p>
+  <strong>Name´s pet:</strong> 
+  <%= @client.pets.pluck(:name) %>
+</p>
+
+<p>
+  <strong>Max. Weight</strong>
+  <%= @client.max_weight %>
+</p>
+
+<p>
+  <strong>Max. Height</strong>
+  <%= @client.max_height %>
+</p>
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>
+
+
